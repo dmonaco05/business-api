@@ -2,26 +2,34 @@ This is an API built in rails-api that will serve business information in JSON f
 
 Data points - id, uuid, name, address, address2, city, state, zip, country, phone, website, created_at
 
-GET /business - returns paginated results (default set to 50)
+GET /businesses - returns paginated results (default set to 50)
 
 GET /businesses/id - returns 1 record if the record exists
 
+-------------------------------------------------------------------------------------------------------------
+
 Steps to run:
 
-1- clone repo
+1- clone/extract repo
 
-2- change the .csv file db/50k_businesses.csv into the data you have, make sure the name stays the same though
+2- change the .csv file db/50k_businesses.csv into the data you have, make sure the filename stays the same
 
-3- run 'bundle install' (may need to gem install bundle)
+3- run 'bundle install' (may need to 'gem install bundle') to setup the app
 
-4- run 'rake db:migrate'
+4- run 'rake db:migrate' to setup the DB
 
-5- run 'rake import'
+5- run 'rake import' to populate the DB
 
-6- run 'rails s'
+6- run 'rails s' to start the local server
 
-7- test responses by running 'curl -I http://localhost:3000/businesses'
+7- open new terminal window (keep the rails server window open)
 
+8- test responses by running:
 
+'$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses'
+'$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses/1'
+'$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses?page=3'
+
+--------------------------------------------------------------------------------------------------------------
 
 This API is made possible through the use of open source libraries 'active_model_serializers', 'will_paginate', 'api-pagination'
