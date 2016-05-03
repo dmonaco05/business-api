@@ -1,5 +1,11 @@
 This is an API built in rails-api that will serve business information in JSON format
 
+Data points - id, uuid, name, address, address2, city, state, zip, country, phone, website, created_at
+
+GET /business - returns paginated results (default set to 50)
+
+GET /businesses/id - returns 1 record if the record exists
+
 Steps to run:
 
 1- clone repo
