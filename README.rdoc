@@ -15,3 +15,7 @@ Steps to run:
 6- run 'rails s'
 
 7- test responses by running 'curl -I http://localhost:3000/businesses'
+
+
+
+This API is made possible through the use of open source libraries 'active_model_serializers', 'will_paginate', 'api-pagination'
