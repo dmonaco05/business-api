@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160503140316) do
+ActiveRecord::Schema.define(version: 20160503143853) do
 
   create_table "businesses", force: :cascade do |t|
     t.string   "uuid"
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20160503140316) do
     t.string   "address2"
     t.string   "city"
     t.string   "state"
-    t.integer  "zip"
+    t.string   "zip"
     t.string   "country"
-    t.integer  "phone"
+    t.string   "phone"
     t.string   "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
