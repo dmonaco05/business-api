@@ -27,7 +27,9 @@ Steps to run:
 8- test responses by running:
 
 '$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses'
+
 '$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses/1'
+
 '$curl -H "Content-Type: application/json" http://localhost:3000/api/v1/businesses?page=3'
 
 --------------------------------------------------------------------------------------------------------------
