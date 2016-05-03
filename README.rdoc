@@ -4,4 +4,7 @@ Steps to run:
 1- clone repo
 2- change the .csv file db/50k_businesses.csv into the data you have, make sure the name stays the same though
 3- run 'bundle install'
-4- run 'rake import'
+4- run 'rake db:migrate'
+5- run 'rake import'
+6- run 'rails s'
+7- test responses by running 'curl -I http://localhost:3000/businesses'
